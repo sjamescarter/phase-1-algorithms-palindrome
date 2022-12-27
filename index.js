@@ -1,10 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for(let i = 0; i <= word.length - 1; i++) {
+    if (word[i] === word[word.length - (i + 1)]) {
+    } else {
+      return false
+    }
+  }
+  return true
 }
 
 /* 
   Add your pseudocode here
 */
+// loop through the string as an array starting at each end
+// compare the values
+// return true if all values match
 
 /*
   Add written explanation of your solution here
